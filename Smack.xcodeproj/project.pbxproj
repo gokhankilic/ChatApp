@@ -18,6 +18,7 @@
 		B6A864592215472D008ACC49 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A864582215472C008ACC49 /* GradientView.swift */; };
 		B6A8645C22154F86008ACC49 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A8645B22154F86008ACC49 /* Constants.swift */; };
 		B6A8645E2215555E008ACC49 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A8645D2215555E008ACC49 /* LoginVC.swift */; };
+		B6E9E01A221A8EEC0025BB60 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E9E019221A8EEC0025BB60 /* AuthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		B6A864582215472C008ACC49 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		B6A8645B22154F86008ACC49 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B6A8645D2215555E008ACC49 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		B6E9E019221A8EEC0025BB60 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		E83AD6DEF8CCAB896B5B713B /* Pods_Smack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -70,6 +72,7 @@
 		B66DE85D2212B5EE004CEDAE = {
 			isa = PBXGroup;
 			children = (
+				B6E9E018221A8C8C0025BB60 /* Services */,
 				B6A8645A22154F72008ACC49 /* Utilities */,
 				B66DE87D2212B6AE004CEDAE /* Controller */,
 				B66DE87C2212B6A6004CEDAE /* View */,
@@ -133,6 +136,14 @@
 				B6A8645B22154F86008ACC49 /* Constants.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B6E9E018221A8C8C0025BB60 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B6E9E019221A8EEC0025BB60 /* AuthService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +279,7 @@
 				B60C2FC922155A6C0066192F /* CreateAccountVC.swift in Sources */,
 				B6A864592215472D008ACC49 /* GradientView.swift in Sources */,
 				B66DE86A2212B5EE004CEDAE /* AppDelegate.swift in Sources */,
+				B6E9E01A221A8EEC0025BB60 /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

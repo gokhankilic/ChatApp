@@ -10,6 +10,9 @@ import UIKit
 
 class LoginVC: UIViewController {
 
+    @IBOutlet weak var usernameTxt: UITextField!
+    @IBOutlet weak var passwordTxt: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,6 +28,18 @@ class LoginVC: UIViewController {
     @IBAction func closePressed(_ sender: Any) {
         print("pressed")
         dismiss(animated: true, completion: nil)
+        
+    }
+    
+    @IBAction func loginPressed(_ sender: Any) {
+        
+        print("username : \(usernameTxt.text!) | password: \(passwordTxt.text!)")
+        AuthService.instance.loginUser(email: usernameTxt.text!, password: passwordTxt.text!, completion: { (success) in
+                
+                if success {
+                    print("logged in user!", AuthService.instance.token)
+                }
+            })
         
     }
     

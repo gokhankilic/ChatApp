@@ -275,6 +275,9 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginPressed:" destination="RVy-WC-sW4" eventType="touchUpInside" id="RWb-Tx-c0v"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -293,6 +296,8 @@
                         <viewLayoutGuide key="safeArea" id="NlB-fy-2DP"/>
                     </view>
                     <connections>
+                        <outlet property="passwordTxt" destination="0pd-LD-a1f" id="JK9-Kh-JPQ"/>
+                        <outlet property="usernameTxt" destination="GvG-5i-4OI" id="Crh-Av-EYD"/>
                         <segue destination="qAe-Zo-wxh" kind="presentation" identifier="toCreateAccount" id="gSZ-z4-e0n"/>
                     </connections>
                 </viewController>
@@ -394,6 +399,7 @@
                                 </state>
                                 <connections>
                                     <action selector="createAccountBtnPressed:" destination="RVy-WC-sW4" eventType="touchUpInside" id="sQc-NH-oqG"/>
+                                    <action selector="pickAvatarPressed:" destination="qAe-Zo-wxh" eventType="touchUpInside" id="AN5-eC-vfQ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nNU-8E-h4b">
@@ -406,6 +412,9 @@
                                 <state key="normal" title="Create Account">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="createAccountPressed:" destination="qAe-Zo-wxh" eventType="touchUpInside" id="psp-by-EpR"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="PQE-TK-SUx">
                                 <rect key="frame" x="137.5" y="314" width="100" height="100"/>
@@ -422,6 +431,7 @@
                                 </state>
                                 <connections>
                                     <action selector="createAccountBtnPressed:" destination="RVy-WC-sW4" eventType="touchUpInside" id="POJ-xo-HV3"/>
+                                    <action selector="generateBgColorPressed:" destination="qAe-Zo-wxh" eventType="touchUpInside" id="eDQ-ZW-Qc0"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -446,6 +456,10 @@
                         <viewLayoutGuide key="safeArea" id="V1E-UZ-pXX"/>
                     </view>
                     <connections>
+                        <outlet property="emailTxt" destination="qLw-BU-Xi1" id="HgZ-LE-OYY"/>
+                        <outlet property="passwordTxt" destination="oY4-U8-d4C" id="Ey5-Fj-aOe"/>
+                        <outlet property="userImg" destination="PQE-TK-SUx" id="kyh-u9-wTT"/>
+                        <outlet property="usernameTxt" destination="DLT-yO-GRi" id="2NX-El-giT"/>
                         <segue destination="tpn-v6-bA0" kind="unwind" identifier="unwindToChannel" unwindAction="prepareForUnwindWithSegue:" id="HI9-1z-Jyu"/>
                     </connections>
                 </viewController>
